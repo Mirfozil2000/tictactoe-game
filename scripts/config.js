@@ -6,6 +6,7 @@ function openPlayerConfig() {
 function closePlayerConfig() {
     playerConfigOverlayElement.style.display = 'none';
     backdropElement.style.display = 'none';
+    formElement.firstElementChild.classList.remove('error');
 }
 
 function savePlayerConfig(event) {
