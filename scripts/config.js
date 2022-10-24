@@ -14,6 +14,7 @@ function savePlayerConfig(event) {
     const enteredPlayerName = formData.get('playername').trim(); 
 
     if(!enteredPlayerName) {
+        event.target.firstElementChild.className = 'error';
         errorsOutputElement.textContent = 'Please enter a valid name!';
         return;
     }
