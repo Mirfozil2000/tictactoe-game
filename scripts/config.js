@@ -1,4 +1,5 @@
-function openPlayerConfig() {
+function openPlayerConfig(event) {
+    editedPlayer = event.target.dataset.playerid;
     playerConfigOverlayElement.style.display = 'block';
     backdropElement.style.display = 'block';
 }
